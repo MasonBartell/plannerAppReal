@@ -13,6 +13,7 @@ class ViewController3: UIViewController {
     
 @IBOutlet weak var dateOutlet: UITextField!
     
+@IBOutlet weak var detailsOutlet: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +24,14 @@ class ViewController3: UIViewController {
     @IBAction func addButton(_ sender: UIButton) {
        var addTitle = titleOutlet.text!
         AppData.title.append(addTitle)
+
         var adddate = dateOutlet.text!
         AppData.date.append(adddate)
+        
+        var addDesc = detailsOutlet.text!
+        AppData.desc.append(addDesc)
+        
+
     }
     
     

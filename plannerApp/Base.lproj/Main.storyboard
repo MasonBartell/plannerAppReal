@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MPb-iv-cSS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MPb-iv-cSS">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,32 +82,32 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kdd-ga-Wr7" secondAttribute="bottom" id="Dkg-Tc-i3t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kdd-ga-Wr7" secondAttribute="trailing" id="VgN-Rg-eem"/>
-                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mc2-Q9-rQ7"/>
-                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oFM-bt-G8E"/>
+                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Eb-4k-MBI"/>
+                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9CB-A1-qi1"/>
+                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Td8-o1-kZe"/>
+                            <constraint firstItem="Kdd-ga-Wr7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="s7A-Zo-EfD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bPV-Yd-jKD">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="2as-pG-gQ4">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="86e-6f-SRf">
-                                <rect key="frame" x="16" y="4.6666666666666679" width="61" height="35"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="an0-sW-XRN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="J4s-yS-6Fs">
+                                <rect key="frame" x="16" y="2" width="61" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWY-Tg-fqz"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="saveButton:" destination="BYZ-38-t0r" id="cFK-PK-83m"/>
-                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="b4C-4m-qwr">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Cgm-H3-0hp">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="IGD-XA-ALX">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tJp-uX-hTQ">
                                 <rect key="frame" x="322" y="4.6666666666666679" width="55" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                 <connections>
-                                    <action selector="addAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71G-XO-Khh"/>
+                                    <action selector="addButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgS-9w-Vii"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -118,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="-90"/>
+            <point key="canvasLocation" x="1736.6412213740457" y="-90.140845070422543"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="SeK-yg-yC4">
@@ -185,6 +186,7 @@
                     <navigationItem key="navigationItem" id="fbC-8V-xVo"/>
                     <connections>
                         <outlet property="dateOutlet" destination="OZD-C8-Tl1" id="3zf-nD-7KT"/>
+                        <outlet property="detailsOutlet" destination="qK0-aa-ODa" id="i9o-KY-xYf"/>
                         <outlet property="titleOutlet" destination="Fq2-sq-XcF" id="dhz-3N-07R"/>
                     </connections>
                 </viewController>
