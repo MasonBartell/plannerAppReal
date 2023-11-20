@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController2: UIViewController {
 
+    @IBOutlet weak var descOutlet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        descOutlet.text = AppData.selectedDesc
 
     }
     

@@ -89,6 +89,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let blah = tableView.cellForRow(at: indexPath)?.textLabel?.text{
             AppData.selectedDesc = AppData.desc[indexPath.row]
+            performSegue(withIdentifier: "descSegue", sender: self)
             
         }
     }
