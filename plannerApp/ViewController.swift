@@ -11,6 +11,7 @@ class AppData {
     static var title = [String]()
     static var date = [String]()
     static var desc = [String]()
+    static var selectedDesc = ""
 }
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -84,6 +85,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let blah = tableView.cellForRow(at: indexPath)?.textLabel?.text{
+            AppData.selectedDesc = AppData.desc[indexPath.row]
+            
+        }
+    }
+    
     }
     
     
