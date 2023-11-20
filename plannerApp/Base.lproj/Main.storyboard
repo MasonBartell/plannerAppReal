@@ -34,6 +34,7 @@
                         <viewLayoutGuide key="safeArea" id="nNI-K7-rea"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ezk-9o-qgw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQt-1x-aNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +115,7 @@
                     <connections>
                         <outlet property="tableViewOutlet" destination="Kdd-ga-Wr7" id="sAh-iZ-b2t"/>
                         <segue destination="2ba-fZ-mWl" kind="show" identifier="Addsegue" id="AW8-Cv-pmb"/>
+                        <segue destination="zbL-2A-TCk" kind="show" id="j5m-Xk-keh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
