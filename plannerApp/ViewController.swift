@@ -23,7 +23,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableViewOutlet.dataSource = self
         tableViewOutlet.delegate = self
 
@@ -33,8 +32,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         AppData.desc = (defaults.array(forKey: "theDescs") as? [String] ?? [""])
         
-
-
         
     }
     
@@ -84,6 +81,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             tableView.deleteRows(at: [indexPath], with: .top)
             
         }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -93,6 +91,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         }
     }
+    
+    
+    
     
     }
     
