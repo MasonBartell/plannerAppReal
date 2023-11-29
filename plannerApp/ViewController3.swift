@@ -23,12 +23,17 @@ class ViewController3: UIViewController {
 
     @IBAction func addButton(_ sender: UIButton) {
         let alert = UIAlertController(title: "Error", message: "Same Date and Title", preferredStyle: .alert)
+        let alert2 = UIAlertController(title: "Error", message: "Title Required", preferredStyle: .alert)
+        
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
+        alert2.addAction(okAction)
         let addTitle = titleOutlet.text!
         let adddate = dateOutlet.text!
-        
-        if AppData.title.description.lowercased().contains(addTitle.lowercased()) && AppData.date.description.lowercased().contains(adddate.lowercased())
+        if (titleOutlet.text! == ""){
+            present(alert2, animated: true)
+        }
+        else if (AppData.title.description.lowercased().contains(addTitle.lowercased()) && AppData.date.description.lowercased().contains(adddate.lowercased()))
         {
             present(alert, animated: true)
         }
