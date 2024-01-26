@@ -148,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uua-Zp-bUg">
-                                <rect key="frame" x="120" y="442" width="153" height="37"/>
+                                <rect key="frame" x="120" y="332" width="153" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
@@ -167,13 +167,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qK0-aa-ODa">
-                                <rect key="frame" x="16" y="514" width="361" height="176"/>
+                                <rect key="frame" x="16" y="377" width="361" height="354"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aen-Id-MhH">
-                                <rect key="frame" x="127" y="718" width="139" height="71"/>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oTJ-l7-eQF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fbC-8V-xVo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Rnq-WN-aP4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="aen-Id-MhH">
+                                <rect key="frame" x="238" y="0.0" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add">
@@ -183,11 +189,8 @@
                                     <action selector="addButton:" destination="2ba-fZ-mWl" eventType="touchUpInside" id="Vt2-4N-hwU"/>
                                 </connections>
                             </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="oTJ-l7-eQF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fbC-8V-xVo"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateOutlet" destination="OZD-C8-Tl1" id="3zf-nD-7KT"/>
                         <outlet property="detailsOutlet" destination="qK0-aa-ODa" id="i9o-KY-xYf"/>
@@ -196,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lvF-on-bPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2589" y="251"/>
+            <point key="canvasLocation" x="2588.5496183206105" y="250.7042253521127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jvA-Ac-p3L">

@@ -46,9 +46,19 @@ class ViewController3: UIViewController {
         var addDesc = detailsOutlet.text!
         AppData.desc.append(addDesc)
         
+        titleOutlet.resignFirstResponder()
+        dateOutlet.resignFirstResponder()
+        detailsOutlet.resignFirstResponder()
 
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleOutlet.resignFirstResponder()
+        dateOutlet.resignFirstResponder()
+        detailsOutlet.resignFirstResponder()
+        return true
+    }
+    }
+
     
     
-}
